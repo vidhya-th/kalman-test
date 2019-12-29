@@ -9,6 +9,7 @@ spacing=0.1
 gain_rate =0.0
 gain_scale =0.2
 
+belief = np.array([0.1])
 def noisy_sin(begin=0, end=10, spacing=0.1, scaling=1, noise_factor=1):
     x = np.arange(begin,end,spacing)
     y = np.sin(x)
