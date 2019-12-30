@@ -42,7 +42,7 @@ est =0
 for i in np.arange(0,len(yn)):
     pred = predict(est,spacing,gain_rate)
     pp.append(pred)
-    est, gain_rate = estimate(pred,yn[i], 0.7, gain_rate)
+    est, gain_rate = estimate(pred,yn[i], 0.3, gain_rate)
     ee.append(est)
 
 
